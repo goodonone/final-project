@@ -1,3 +1,7 @@
 <h1>Products</h1>
 
-<div *ngFor="let p of productList"></div>
+<div *ngFor="let p of productList">
+ {{p.imageUrl}}
+ <p>{{p.title}}</p>
+ <p>${{p.price}}</p>
+</div>
