@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Product } from '../models/product';
 import { ProductsService } from '../services/products.service';
 
@@ -11,17 +12,35 @@ export class ProductsComponent implements OnInit {
 
   productList: Product[] = [];
 
-  constructor(private productService: ProductsService){ }
+  // id: number = 0;
 
-ngOnInit(): void {
-  this.loadProducts();
-}
+  // currentProduct: Product = new Product();
 
-loadProducts(){
-  this.productService.getAllProducts().subscribe(foundProducts => {
+  constructor(private productService: ProductsService, private actRoute: ActivatedRoute, private router: Router) { }
+
+  ngOnInit(): void {
+    this.loadProducts();
+
+    // const routeId = this.actRoute.snapshot.paramMap.get("id") ?? "";
+    // this.id = parseInt(routeId);
+    // this.productService.getProductByID(this.id).subscribe(foundProduct => {
+    //   this.currentProduct = foundProduct;
+    // });
+  }
+
+  loadProducts() {
+    this.productService.getAllProducts().subscribe(foundProducts => {
       this.productList = foundProducts;
-  });
-}
+    });
+  }
+
+  // // onDelete(id: number) {
+  // //   this.productService.deleteProductByID(id).subscribe(response => {
+  // //     this.productService = response;
+  // //     this.router.navigate(['products']);
+  // //   });
+  // }
+
 
 }
 

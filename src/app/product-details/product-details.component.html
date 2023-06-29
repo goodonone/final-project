@@ -1,1 +1,10 @@
-<p>product-details works!</p>
+<div>
+    <h1>Product: {{currentProduct.itemName}}</h1>
+    <h3>{{currentProduct.description}}, ${{currentProduct.price}}</h3>
+    <img [src]="currentProduct.imageUrl">
+</div>
+
+<div>
+    <button [routerLink]='["/edit", currentProduct.id]'>Edit Product</button>
+    <button (click)="onDelete(currentProduct.id)">Delete Product</button>
+</div>

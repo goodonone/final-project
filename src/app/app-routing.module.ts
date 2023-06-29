@@ -7,7 +7,6 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import { AddProductComponent } from './add-product/add-product.component';
 import { EditProductComponent } from './edit-product/edit-product.component';
 
-
 const routes: Routes = [
   { path: "", redirectTo: "/home", pathMatch: "full" },
   { path: "home", component: HomeComponent },
