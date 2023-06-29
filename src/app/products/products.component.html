@@ -1,8 +1,10 @@
 <h1>Products</h1>
+
+<button routerLink="/create">Create New Item</button>
 <div *ngFor="let p of productList" [routerLink]='["/products", p.id]'>
  <img [src]="p.imageUrl">
  <p>{{p.itemName}} | ${{p.price}}</p>
 
-    <!-- <button [routerLink]='["/edit", currentProduct.id]'>Edit Product</button>
-    <button (click)="onDelete(currentProduct.id)">Delete Product</button> -->
+    <button [routerLink]='["/edit", currentProduct.id]'>Edit Product</button>
+    <button (click)="onDelete(currentProduct.id)">Delete Product</button>
 </div> 
