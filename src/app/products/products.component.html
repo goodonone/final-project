@@ -5,6 +5,6 @@
  <img [src]="p.imageUrl">
  <p>{{p.itemName}} | ${{p.price}}</p>
 
-    <button [routerLink]='["/edit", currentProduct.id]'>Edit Product</button>
-    <button (click)="onDelete(currentProduct.id)">Delete Product</button>
+    <button [routerLink]='["/edit", p.id]'>Edit Product</button>
+    <button (click)="onDelete(p.id)">Delete Product</button>
 </div> 

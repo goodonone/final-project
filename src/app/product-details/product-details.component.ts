@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Product } from '../models/product';
 import { ProductsService } from '../services/products.service';
-import { ProductsComponent } from '../products/products.component';
 
 @Component({
   selector: 'app-product-details',
@@ -23,6 +22,15 @@ export class ProductDetailsComponent implements OnInit {
     this.productService.getProductByID(this.id).subscribe(foundProduct => {
       this.currentProduct = foundProduct;
     });
+
+    // if(id<=this.ProductsService.getJobsLength()){
+    //   this.ourJobService.getJob(id).subscribe(result => {
+    //     this.job = result;})
+    // }
+    // else{
+    //   this.router.navigate(['**']);
+    // }
+
   }
 
   onDelete(id: number) {
@@ -31,5 +39,8 @@ export class ProductDetailsComponent implements OnInit {
       this.router.navigate(['products']);
     });
   }
+
+  
+
 
 }

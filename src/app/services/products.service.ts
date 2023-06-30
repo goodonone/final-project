@@ -32,5 +32,10 @@ export class ProductsService {
     return this.http.delete<any>(this.dataSource + "/" + id)
   }
 
+  // getProductsLength(){
+  //   arrayLength : Number 
+  //   return this.http.get<Number>(this.dataSource.items[].length);
+  //   console.log()
+  // }
 
 }

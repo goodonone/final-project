@@ -2,7 +2,9 @@
     <nav class="navbar">
         <button routerLink="/home">Home</button>   
         <button routerLink="/about">About</button>       
-        <button routerLink="/products">Products</button>       
+        <button [routerLink]="['/products']">Products</button>       
+        <input input type="text" id="mySearch" onkeyup="searchByName()" placeholder="Search..." title="Search For Products">
+        <button onclick="searchByName()">Search</button>  
     </nav>
 </Header>
 

@@ -21,11 +21,11 @@ export class ProductsComponent implements OnInit {
   ngOnInit(): void {
     this.loadProducts();
 
-    const routeId = this.actRoute.snapshot.paramMap.get("id") ?? "";
-    this.id = parseInt(routeId);
-    this.productService.getProductByID(this.id).subscribe(foundProduct => {
-      this.currentProduct = foundProduct;
-    });
+    // const routeId = this.actRoute.snapshot.paramMap.get("id") ?? "";
+    // this.id = parseInt(routeId);
+    // this.productService.getProductByID(this.id).subscribe(foundProduct => {
+    //   this.currentProduct = foundProduct;
+    // });
   }
 
   loadProducts() {
@@ -40,6 +40,7 @@ export class ProductsComponent implements OnInit {
       this.router.navigate(['products']);
     });
   }
+
 
 
 }
