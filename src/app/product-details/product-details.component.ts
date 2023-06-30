@@ -25,11 +25,11 @@ export class ProductDetailsComponent implements OnInit {
     });
   }
 
-  // onDelete(id: number) {
-  //   this.productService.deleteProductByID(id).subscribe(response => {
-  //     this.productService = response;
-  //     this.router.navigate(['products']);
-  //   });
-  // }
+  onDelete(id: number) {
+    this.productService.deleteProductByID(id).subscribe(response => {
+      this.productService = response;
+      this.router.navigate(['products']);
+    });
+  }
 
 }
