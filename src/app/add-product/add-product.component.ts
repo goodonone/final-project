@@ -12,18 +12,17 @@ export class AddProductComponent {
 
   newProduct: Product = new Product();
 
-  constructor(private productService: ProductsService, private router: Router){
+  constructor(private productService: ProductsService, private router: Router) {
   }
 
   ngOnInit(): void {
-    
+
   }
 
   onSubmit() {
     this.productService.createNewProduct(this.newProduct).subscribe(response => {
-        console.log(response);
-        this.router.navigateByUrl("/products")
+      this.router.navigateByUrl("/products")
     });
-}
+  }
 
 }

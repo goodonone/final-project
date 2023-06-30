@@ -15,21 +15,21 @@ export class ProductsService {
   getAllProducts(): Observable<Product[]> {
     return this.http.get<Product[]>(this.dataSource);
   }
-  
+
   getProductByID(id: number): Observable<Product> {
-  return this.http.get<Product>(this.dataSource + "/" + id);
+    return this.http.get<Product>(this.dataSource + "/" + id);
   }
-  
-  createNewProduct(newProduct: Product): Observable<Product>{
-  return this.http.post<Product>(this.dataSource, newProduct);
+
+  createNewProduct(newProduct: Product): Observable<Product> {
+    return this.http.post<Product>(this.dataSource, newProduct);
   }
-  
+
   editProduct(id: number, edittedProduct: Product): Observable<Product> {
-  return this.http.put<Product>(this.dataSource + "/" + id, edittedProduct);
+    return this.http.put<Product>(this.dataSource + "/" + id, edittedProduct);
   }
-  
+
   deleteProductByID(id: number): Observable<any> {
-  return this.http.delete<any>(this.dataSource + "/" + id)
+    return this.http.delete<any>(this.dataSource + "/" + id)
   }
 
 

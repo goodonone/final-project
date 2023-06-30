@@ -10,10 +10,14 @@
     <input type="text" name="price" [(ngModel)]="newProduct.price">
 
     <label>Organic</label>
-    <input type="text" name="organic" [(ngModel)]="newProduct.organic">
+    <select name = "organic" [(ngModel)]="newProduct.organic">
+        <option value = "true" selected>Yes</option>
+        <option value = "false">No</option>
+     </select>
 
     <label>Product Image Link</label>
     <input type="text" name="imageLink" [(ngModel)]="newProduct.imageUrl">
 
-    <button type="submit">CREATE</button>
+    <button type="submit">Create</button>
+    <button routerLink="/products">Back</button>
 </form>

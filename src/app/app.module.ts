@@ -11,6 +11,7 @@ import { AddProductComponent } from './add-product/add-product.component';
 import { EditProductComponent } from './edit-product/edit-product.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { NotfoundComponent } from './notfound/notfound.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FormsModule } from '@angular/forms';
     ProductsComponent,
     ProductDetailsComponent,
     AddProductComponent,
-    EditProductComponent
+    EditProductComponent,
+    NotfoundComponent
   ],
   imports: [
     BrowserModule,

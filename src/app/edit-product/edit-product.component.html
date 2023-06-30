@@ -1,1 +1,24 @@
-<p>edit-product works!</p>
+<h1>Edit Product</h1>
+<form #form="ngForm" (ngSubmit)="onSubmit()">
+    <label>Product Name</label>
+    <input type="text" name="productName" [(ngModel)]="currentProduct.itemName">
+
+    <label>Product Description</label>
+    <input type="text" name="description" [(ngModel)]="currentProduct.description">
+
+    <label>Product Price</label>
+    <input type="text" name="price" [(ngModel)]="currentProduct.price">
+
+    <label>Organic</label>
+    <select name = "organic" [(ngModel)]="currentProduct.organic">
+        <option value = "true" selected>Yes</option>
+        <option value = "false">No</option>
+     </select>
+
+    <label>Product Image Link</label>
+    <input type="text" name="imageLink" [(ngModel)]="currentProduct.imageUrl">
+
+    <button type="submit">Submit</button>
+    <button routerLink="/products">Back</button>
+</form>
+

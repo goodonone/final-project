@@ -1,28 +1,28 @@
 {
-    "items": [
-      {
-        "id": 1,
-        "itemName": "Sourdough Boule",
-        "price": 5.99,
-        "description": "Authentic, light and fluffy, and yet, hard and crusty Sourdough boule.",
-        "organic": "true",
-        "imageUrl": "assets/Sourdough-boule.jpg"
-      },
-      {
-        "id": 2,
-        "itemName": "Sourdough Batard",
-        "price": 3.99,
-        "description": "Authentic, light and fluffy, and yet, hard and crusty Sourdough batard.",
-        "organic": "false",
-        "imageUrl": "assets/Sourdough-batard.jpg"
-      },
-      {
-        "id": 3,
-        "itemName": "French Country White",
-        "price": 4.99,
-        "description": "Enchanting french white bread loaf.",
-        "organic": "true",
-        "imageUrl": "assets/French.jpg"
-      }
-    ]
-  }
+  "items": [
+    {
+      "id": 1,
+      "itemName": "Sourdough Boule",
+      "price": 5.99,
+      "description": "Authentic, light and fluffy, and yet, hard and crusty Sourdough boule.",
+      "organic": "true",
+      "imageUrl": "assets/Sourdough-boule.jpg"
+    },
+    {
+      "id": 2,
+      "itemName": "Sourdough Batard",
+      "price": 3.99,
+      "description": "Authentic, light and fluffy, and yet, hard and crusty Sourdough batard.",
+      "organic": "false",
+      "imageUrl": "assets/Sourdough-batard.jpg"
+    },
+    {
+      "id": 3,
+      "itemName": "French Country White",
+      "price": 4.99,
+      "description": "Enchanting french white bread loaf.",
+      "organic": "true",
+      "imageUrl": "assets/French.jpg"
+    }
+  ]
+}
