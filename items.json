@@ -3,26 +3,26 @@
     {
       "id": 1,
       "itemName": "Sourdough",
-      "price": 5.99,
-      "description": "Authentic, light and fluffy, and yet, hard and crusty Sourdough boule.",
-      "organic": "true",
+      "price": 3.99,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Faucibus vitae aliquet nec ullamcorper. Malesuada fames ac turpis egestas maecenas pharetra convallis posuere. Massa tincidunt dui ut ornare. Sed viverra tellus in hac habitasse. Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque habitant. Lectus urna duis convallis convallis. Interdum consectetur libero id faucibus nisl tincidunt. Posuere ac ut consequat semper viverra nam libero justo. Odio eu feugiat pretium nibh ipsum consequat nisl vel. Felis imperdiet proin fermentum leo. Volutpat ac tincidunt vitae semper quis lectus nulla at.",
+      "organic": "false",
       "imageUrl": "assets/Sourdough-boule.jpg"
     },
     {
       "id": 2,
       "itemName": "Ciabatta",
       "price": 3.99,
-      "description": "Crusty yet soft sliced Ciabatta loaf",
+      "description": "Nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae. Aliquam ut porttitor leo a. Egestas purus viverra accumsan in nisl. At augue eget arcu dictum varius duis. Tincidunt tortor aliquam nulla facilisi cras fermentum odio. Urna id volutpat lacus laoreet. Porta nibh venenatis cras sed felis eget. Viverra aliquet eget sit amet tellus cras adipiscing enim. Enim blandit volutpat maecenas volutpat blandit aliquam etiam erat velit. Lorem ipsum dolor sit amet consectetur. Sit amet cursus sit amet dictum sit amet. Amet venenatis urna cursus eget nunc scelerisque. Fermentum iaculis eu non diam phasellus. Magnis dis parturient montes nascetur ridiculus mus mauris. Tempus egestas sed sed risus pretium quam vulputate dignissim suspendisse. Nulla pellentesque dignissim enim sit amet venenatis. Interdum velit laoreet id donec ultrices.",
       "organic": "false",
-      "imageUrl": "assets/Sourdough-batard.jpg"
+      "imageUrl": "assets/Ciabatta.jpg"
     },
     {
       "id": 3,
       "itemName": "Brioche",
       "price": 4.99,
-      "description": "Deliciously sweet sliced brioche bread.",
+      "description": "Dis parturient montes nascetur ridiculus mus. Mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare. Interdum velit euismod in pellentesque massa placerat duis. Sed velit dignissim sodales ut eu sem integer vitae justo. Adipiscing elit ut aliquam purus sit amet. Cras adipiscing enim eu turpis egestas pretium aenean. Pellentesque habitant morbi tristique senectus. Rhoncus urna neque viverra justo nec ultrices. Quisque id diam vel quam elementum pulvinar. At consectetur lorem donec massa. Ac tortor dignissim convallis aenean et tortor at risus. Tincidunt arcu non sodales neque sodales ut. Nulla pharetra diam sit amet nisl suscipit adipiscing. At erat pellentesque adipiscing commodo elit at. Lectus quam id leo in vitae turpis massa sed. Faucibus nisl tincidunt eget nullam non nisi.",
       "organic": "true",
-      "imageUrl": "assets/Ciabatta.jpg"
+      "imageUrl": "assets/Brioche.jpg"
     }
   ]
 }

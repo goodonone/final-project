@@ -1,5 +1,11 @@
-h1{
-    text-align: center;
+.title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+h1 {
     font-size: 5em;
     padding-top: 25px;
     padding-bottom: 30px;
@@ -10,17 +16,19 @@ h1{
     height: 300px;
   } */
 
-.cardImage{
+.cardImage {
     width: 350px;
     height: 500px;
-  }
+    box-shadow: 5px 15px 30px #a8a8a8;
+}
 
-  #centerCard{
-max-height:300px
-  }
+/* #centerCard {
+    max-height: 300px
+} */
 
-  #imagesContainer{
+#imagesContainer {
     display: flex;
-    justify-content: space-evenly
-  }
-
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: auto;
+}
