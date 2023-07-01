@@ -41,7 +41,7 @@ nav{
     padding-bottom: 8px;
     /* /* margin-top: 20px; */
     color: rgb(47, 34, 34);
-    background: rgb(222, 196, 140);
+    background: rgb(231, 211, 174);
 	border: none;
 	/* padding: 0; */
 	font: inherit;
@@ -60,6 +60,14 @@ input{
     font-size: inherit;
 }
 
+#footer{
+    display: flex;
+    justify-content: left;
+    background-color: rgb(231, 211, 174);
+    padding-top: 8px;
+    /* margin-top: 20px; */
+}
+
 
 /* .container{
 display: flex;
@@ -76,3 +84,4 @@ justify-content: space-evenly;
     /* width: 33.33%; */
     /* margin-top: 5px; */
   /* } */
+

@@ -1,9 +1,17 @@
-<div>
-    <h1>Product: {{currentProduct.itemName}}</h1>
-    <h3>{{currentProduct.description}}, ${{currentProduct.price}}</h3>
-    <img [src]="currentProduct.imageUrl">
+<h1>{{currentProduct.itemName}}</h1>
 
-    <button [routerLink]='["/edit", currentProduct.id]'>Edit Product</button>
-    <button (click)="onDelete(currentProduct.id)">Delete Product</button>
-    <button routerLink="/products">Back</button>
+<div class="container">
+    <div class="description">
+        <h2>${{currentProduct.price}}</h2>
+        <p>{{currentProduct.description}}</p>
+    </div>
+    <div class="image">
+        <mat-card class="example-card" class="cardImage">
+            <img mat-card-image [src]="currentProduct.imageUrl" alt="Photo of a Bread">
+        </mat-card>
+    </div>
 </div>
+
+<button [routerLink]='["/edit", currentProduct.id]'>Edit Product</button>
+<button (click)="onDelete(currentProduct.id)">Delete Product</button>
+<button routerLink="/products">Back</button>

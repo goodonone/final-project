@@ -14,6 +14,10 @@ import { FormsModule } from '@angular/forms';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import {MatSelectModule} from '@angular/material/select';
+
 
 @NgModule({
   declarations: [
@@ -34,6 +38,10 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     FormsModule,
     MatCardModule,
     MatTooltipModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
