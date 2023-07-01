@@ -2,7 +2,7 @@
   "items": [
     {
       "id": 1,
-      "itemName": "Sourdough Boule",
+      "itemName": "Sourdough",
       "price": 5.99,
       "description": "Authentic, light and fluffy, and yet, hard and crusty Sourdough boule.",
       "organic": "true",
@@ -10,19 +10,19 @@
     },
     {
       "id": 2,
-      "itemName": "Sourdough Batard",
+      "itemName": "Ciabatta",
       "price": 3.99,
-      "description": "Authentic, light and fluffy, and yet, hard and crusty Sourdough batard.",
+      "description": "Crusty yet soft sliced Ciabatta loaf",
       "organic": "false",
       "imageUrl": "assets/Sourdough-batard.jpg"
     },
     {
       "id": 3,
-      "itemName": "French Country White",
+      "itemName": "Brioche",
       "price": 4.99,
-      "description": "Enchanting french white bread loaf.",
+      "description": "Deliciously sweet sliced brioche bread.",
       "organic": "true",
-      "imageUrl": "assets/French.jpg"
+      "imageUrl": "assets/Ciabatta.jpg"
     }
   ]
 }

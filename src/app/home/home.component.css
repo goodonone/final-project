@@ -1,0 +1,26 @@
+h1{
+    text-align: center;
+    font-size: 5em;
+    padding-top: 25px;
+    padding-bottom: 30px;
+}
+
+/* .example-card {
+    width: 350px;
+    height: 300px;
+  } */
+
+.cardImage{
+    width: 350px;
+    height: 500px;
+  }
+
+  #centerCard{
+max-height:300px
+  }
+
+  #imagesContainer{
+    display: flex;
+    justify-content: space-evenly
+  }
+

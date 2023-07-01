@@ -12,6 +12,8 @@ import { EditProductComponent } from './edit-product/edit-product.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { NotfoundComponent } from './notfound/notfound.component';
+import { MatCardModule } from '@angular/material/card';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 @NgModule({
   declarations: [
@@ -30,6 +32,8 @@ import { NotfoundComponent } from './notfound/notfound.component';
     BrowserAnimationsModule,
     HttpClientModule,
     FormsModule,
+    MatCardModule,
+    MatTooltipModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
