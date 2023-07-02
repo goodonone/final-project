@@ -32,11 +32,12 @@ p {
     /* box-shadow: 5px 15px 30px #a8a8a8; */
     display: flex;
     flex-wrap: wrap;
+    max-height: 400px;
 }
 
-.cardImage{
+#cardImage{
     width: 300px;
-    height: 350px;
+    max-height: 400px;
     box-shadow: 5px 15px 30px #a8a8a8;
 }
 
@@ -44,8 +45,9 @@ p {
     display:flex;
     flex-wrap: wrap;
     /* justify-content: left; */
-    margin-left: 285px;
-    margin-top: -30px;
+    /* margin-left: 285px; */
+    margin-top: 30px;
+    margin-left: -13px;
 }
 
 button {

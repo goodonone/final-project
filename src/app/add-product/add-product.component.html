@@ -3,22 +3,22 @@
     <form class="example-form" #form="ngForm" (ngSubmit)="onSubmit()">
         <mat-form-field class="example-full-width" appearance="outline" [style.width.px]=500>
             <mat-label>Product Name</mat-label>
-            <input matInput type="text" name="productName" class="input" [(ngModel)]="newProduct.itemName">
+            <input matInput type="text" name="productName" class="input" [(ngModel)]="newProduct.itemName" required>
         </mat-form-field>
         <br>
         <mat-form-field appearance="outline" [style.width.px]=150>
             <mat-label>Price</mat-label>
-            <input matInput type="number" name="price" class="input" placeholder="$" [(ngModel)]="newProduct.price">
+            <input matInput type="number" name="price" class="input" placeholder="$" [(ngModel)]="newProduct.price" required>
         </mat-form-field>
         <br>
         <mat-form-field appearance="outline" [style.width.px]=500>
             <mat-label>Description</mat-label>
-            <textarea matInput type="text" name="description" class="input" [(ngModel)]="newProduct.description"></textarea>
+            <textarea matInput type="text" name="description" class="input" [(ngModel)]="newProduct.description" required></textarea>
         </mat-form-field>
         <br>
         <mat-form-field appearance="outline" [style.width.px]=500>
             <mat-label>Is the Product Organic?</mat-label>
-            <mat-select class="input">
+            <mat-select class="input" required>
                 <mat-option value="true">Yes</mat-option>
                 <mat-option value="false">No</mat-option>
             </mat-select>
@@ -26,7 +26,7 @@
         <br>
         <mat-form-field appearance="outline" [style.width.px]=500> 
             <mat-label>Product Image URL</mat-label>
-            <input matInput type="text" name="imageLink" class="input" [(ngModel)]="newProduct.imageUrl">
+            <input matInput type="text" name="imageLink" class="input" [(ngModel)]="newProduct.imageUrl" required>
         </mat-form-field>
         <br>
         <button type="submit">Create</button>

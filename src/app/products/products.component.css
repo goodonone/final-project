@@ -2,7 +2,7 @@ h1 {
     text-align: center;
     font-size: 5em;
     padding-top: 25px;
-    padding-bottom: 30px;
+    /* padding-bottom: 10px; */
 }
 
 .container {
@@ -11,7 +11,7 @@ h1 {
 }
 
 .example-card {
-    margin-top: 20px;
+    /* margin-top: 20px; */
     box-shadow: 5px 15px 30px #a8a8a8;
     margin-bottom: 50px;
 }
@@ -24,9 +24,10 @@ h1 {
 #imagesContainer {
     display: flex;
     justify-content: space-evenly;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     margin: auto;
     cursor: pointer;
+    margin-bottom: 40px;
 }
 
 button {
@@ -54,15 +55,26 @@ button:hover {
     border: none;
     padding: 0px;
     margin-left: 30px;
-    margin-top: 50px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .buttonContainer {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     padding-right: 30px;
     flex-wrap: wrap;
-    /* margin-bottom: 180px; */
-    margin-top: -45px;
+    /* margin-bottom: 100px; */
+    /* margin-top: 50px; */
+    padding-bottom: 30px;
     /* height:5vh; */
+}
+
+#zoom {
+    transition: transform .1s;
+    /* margin: 0 auto; */
+}
+
+#zoom:hover {
+    transform: scale(1.05);
 }
