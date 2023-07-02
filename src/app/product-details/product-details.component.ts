@@ -23,13 +23,7 @@ export class ProductDetailsComponent implements OnInit {
       this.currentProduct = foundProduct;
     });
 
-    // if(id<=this.ProductsService.getJobsLength()){
-    //   this.ourJobService.getJob(id).subscribe(result => {
-    //     this.job = result;})
-    // }
-    // else{
-    //   this.router.navigate(['**']);
-    // }
+  
 
   }
 
@@ -40,7 +34,13 @@ export class ProductDetailsComponent implements OnInit {
     });
   }
 
-  
+    // if(id<=this.ProductsService.getJobsLength()){
+    //   this.ourJobService.getJob(id).subscribe(result => {
+    //     this.job = result;})
+    // }
+    // else{
+    //   this.router.navigate(['**']);
+    // }
 
 
 }

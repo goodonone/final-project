@@ -1,0 +1,24 @@
+<div *ngIf="searchedProduct">
+    <h1>{{searchedProduct.itemName}}</h1>
+
+    <div class="container">
+        <div class="description">
+            <h2>${{searchedProduct.price}}</h2>
+            <p>{{searchedProduct.description}}</p>
+
+            <div class="buttonContainer">
+                <button [routerLink]='["/edit", searchedProduct.id]'>Edit Product</button>
+                <button (click)="onDelete(searchedProduct.id)" >Delete Product</button>
+                <button routerLink="/products">Back</button>
+            </div>
+        </div>
+
+        <div class="image">
+            <mat-card class="example-card">
+                <img mat-card-image [src]="searchedProduct.imageUrl" id="cardImage" alt="Photo of a Bread">
+            </mat-card>
+        </div>
+    </div>
+</div>
+
+<!-- " -->

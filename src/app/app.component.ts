@@ -12,11 +12,12 @@ import { Product } from './models/product';
 export class AppComponent implements OnInit {
   title = 'final-project';
 
-  input!: any;
-  filter!: any;
-  value!: any;
+  searchForName: string = "";
+  // input: string = "";
+  // filter!: any;
+  // value!: any;
 
-  productList: Product[] = [];
+  foundProduct: Product = new Product();
 
 
   constructor(private productService: ProductsService, private actRoute: ActivatedRoute, private router: Router) { }
@@ -26,14 +27,24 @@ export class AppComponent implements OnInit {
 
   }
 
-  searchByName(input: string) {
-    this.input = document.getElementById("mySearch");
-    this.productService.getProductByName(input).subscribe(foundProducts => {
+  searchByName(searchForName: string) {
+    var searchForName = (<HTMLInputElement>document.getElementById('mySearch')).value;
+    // this.searchForName = document.getElementById('mySearch')?.value;
+    // this.productService.getProductByName(searchForName).subscribe(result => {
+    //   this.foundProduct = result;
+      // console.log(this.foundProduct);
+      this.router.navigate(['/search', searchForName]);
+    }; 
+
+
+    // this.productService.getProductByName(input).subscribe(foundProducts => {
       // this.productList = foundProducts;
       // if
       // this.filter = input.valueOf.toUpperCase();
-    });
+      // this.router.navigate(['/products/', this.input]);
+    };
     
+
 
     // if(input = this.productList.itemName
 
@@ -67,5 +78,5 @@ export class AppComponent implements OnInit {
 
     // });
 
-  }
-}
+  // }
+  

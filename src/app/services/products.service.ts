@@ -21,7 +21,7 @@ export class ProductsService {
   }
 
   getProductByName(itemName: String): Observable<Product> {
-    return this.http.get<Product>(this.dataSource + "/" + itemName);
+    return this.http.get<Product>(this.dataSource + "?q=" + itemName);
   }
 
   createNewProduct(newProduct: Product): Observable<Product> {
@@ -34,6 +34,10 @@ export class ProductsService {
 
   deleteProductByID(id: number): Observable<any> {
     return this.http.delete<any>(this.dataSource + "/" + id)
+  }
+
+  searchByName(){
+    
   }
 
   // getProductsLength(){

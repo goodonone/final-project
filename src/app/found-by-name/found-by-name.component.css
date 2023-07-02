@@ -1,0 +1,71 @@
+h1 {
+    text-align: center;
+    font-size: 5em;
+    padding-top: 25px;
+    padding-bottom: 30px;
+
+}
+
+h2 {
+    font-size: 3.5em;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    /* justify-content:center; */
+    /* flex-wrap: wrap; */
+    margin: auto;
+    margin-top: -10px;
+    justify-content: space-evenly;
+    padding:50px;
+}
+
+p {
+    width: 400px;
+    text-align:justify;
+    padding-right: 40px;
+}
+
+.image{
+    /* box-shadow: 5px 15px 30px #a8a8a8; */
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 400px;
+}
+
+#cardImage{
+    width: 300px;
+    max-height: 400px;
+    box-shadow: 5px 15px 30px #a8a8a8;
+}
+
+.buttonContainer{
+    display:flex;
+    flex-wrap: wrap;
+    /* justify-content: left; */
+    /* margin-left: 285px; */
+    margin-top: 30px;
+    margin-left: -13px;
+}
+
+button {
+    font: inherit;
+    font-size: 1.1em;
+    cursor: pointer;
+    outline: inherit;
+    color: black;
+    background: none;
+    border: none;
+    padding: 13px;
+}
+
+button:hover {
+    text-shadow: 1px 1px 2px rgb(222, 196, 140);
+}
+
+
+/* .mat-card{
+    background-size: cover;
+} */

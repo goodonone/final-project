@@ -7,6 +7,7 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import { AddProductComponent } from './add-product/add-product.component';
 import { EditProductComponent } from './edit-product/edit-product.component';
 import { NotfoundComponent } from './notfound/notfound.component';
+import { FoundByNameComponent } from './found-by-name/found-by-name.component';
 
 const routes: Routes = [
   { path: "", redirectTo: "/home", pathMatch: "full" },
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: "products/:id", component: ProductDetailsComponent },
   { path: "create", component: AddProductComponent },
   { path: "edit/:id", component: EditProductComponent },
+  { path: "search/:itemName", component: FoundByNameComponent},
   { path: "**", component: NotfoundComponent }
 ];
 

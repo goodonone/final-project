@@ -1,19 +1,7 @@
-<!-- <Header>
-    <nav class="container">
-        <button routerLink="/home">Home</button>   
-        <button routerLink="/about">About</button>       
-        <button routerLink="/products">Products</button>  
-        <div class="inputs">   
-        <input input type="text" id="mySearch" onkeyup="searchByName()" placeholder="Search..." title="Search For Products">
-        <button onclick="searchByName()">Search</button> 
-    </div>   
-    </nav>
-</Header> -->
-
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg bg-body-tertiary" id="navbar">
     <div class="container-fluid" id="background">
         <a class="navbar-brand" href="#">
-            <img src="assets/Brand-logo.png" alt="Bootstrap" width="140" height="100" /></a>
+            <img src="assets/Brand-logo.png" alt="Bootstrap" width="140" height="100"/></a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
@@ -26,8 +14,8 @@
                     <a class="nav-link" routerLink="/products">Products</a>
                 </li>
                 <form class="form-inline my-2 my-lg-0" id="form">
-                    <input class="form-control mr-sm-2" id="mySearch" onkeyup="searchByName(input)" type="search" placeholder="Search..." aria-label="Search">
-                    <button class="btn btn btn-dark" type="submit" id="button" (onclick)="searchByName(input)">Search</button>
+                    <input class="form-control mr-sm-2" id="mySearch" name="search" type="input" placeholder="Search" aria-label="Search" (keyup.enter)="searchByName(searchForName)">
+                    <button class="btn btn btn-dark" name="search" id="button" >Search</button>
                   </form>
             </ul>
         </div>
@@ -42,6 +30,18 @@
             <p><strong>Grain Bakeries LLC. |</strong> <p> <p><strong> |  Copyright 2023</strong></p>
         </footer>
     </div>
+
+    <!-- <Header>
+    <nav class="container">
+        <button routerLink="/home">Home</button>   
+        <button routerLink="/about">About</button>       
+        <button routerLink="/products">Products</button>  
+        <div class="inputs">   
+        <input input type="text" id="mySearch" onkeyup="searchByName()" placeholder="Search..." title="Search For Products">
+        <button onclick="searchByName()">Search</button> 
+    </div>   
+    </nav>
+</Header> -->
 
   <!-- <div class="container-fluid" id="searchBox">
     <input input type="text" id="mySearch" onkeyup="searchByName(input)" placeholder="Search..."

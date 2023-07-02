@@ -6,6 +6,10 @@ nav {
     /* margin: auto; */
 }
 
+#navbar{
+    display: flex;
+}
+
 .navbar {
     display: flex;
 }
