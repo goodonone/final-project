@@ -1,32 +1,33 @@
-nav{
-    
+nav {
+
     background-color: rgb(255, 254, 254);
     padding-top: 0;
     padding-bottom: 0;
     margin: auto;
 }
 
-.navbar{
+.navbar {
     display: flex;
 }
 
-#background{
+#background {
     background-color: rgb(255, 254, 254);
     padding-left: 0;
     padding-right: 0;
     margin: auto;
 }
 
-#navbarSupportedContent{
-    padding-top:20px
+#navbarSupportedContent {
+    padding-top: 20px
 }
 
-#searchBox{
+#searchBox {
     /* margin-bottom: 20px;
     margin-left: 800px; */
     /* padding-bottom: 15px; */
     margin: auto;
 }
+
 /* Header {
     text-align: center;
     background-color: white;
@@ -42,30 +43,34 @@ nav{
     /* /* margin-top: 20px; */
     color: rgb(47, 34, 34);
     background: rgb(231, 211, 174);
-	border: none;
-	/* padding: 0; */
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
+    border: none;
+    /* padding: 0; */
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
 }
 
 
-#form{
+#form {
     display: flex;
     flex-flow: row;
     margin-left: 850px;
 }
 
-input{
+input {
     font-size: inherit;
 }
 
-#footer{
+#footerContainer {
+    margin-top: 20px;
+}
+
+#footer {
     display: flex;
     justify-content: left;
     background-color: rgb(231, 211, 174);
-    padding-top: 8px;
-    /* margin-top: 20px; */
+    padding-top: 10px;
+    /* margin-top: 90px; */
 }
 
 
@@ -82,6 +87,5 @@ justify-content: space-evenly;
     text-decoration: none;
     font-size: 17px;
     /* width: 33.33%; */
-    /* margin-top: 5px; */
-  /* } */
-
+/* margin-top: 5px; */
+/* } */

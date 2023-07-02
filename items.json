@@ -27,18 +27,9 @@
     {
       "id": 4,
       "itemName": "Jam",
-      "description": "Scelerisque purus semper eget duis at. Nibh sit amet commodo nulla. Pellentesque elit eget gravida cum sociis natoque. Arcu dui vivamus arcu felis bibendum ut tristique et. At auctor urna nunc id cursus metus aliquam eleifend mi. ",
-      "price": "5.99",
-      "organic": "true",
-      "imageUrl": "unsplash.com/photos/aWHKsYkbCi8"
-    },
-    {
-      "id": 5,
-      "itemName": "French Toast",
-      "imageUrl": "https://unsplash.com/photos/Cy5dya5MAlI",
-      "organic": "false",
-      "price": "6.99",
-      "description": "Duis ultricies lacus sed turpis tincidunt. Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi tristique. Nec dui nunc mattis enim ut tellus elementum. Habitasse platea dictumst quisque sagittis purus. Aliquam faucibus purus in massa tempor nec feugiat nisl pretium."
+      "price": 5.99,
+      "description": "Duis ultricies lacus sed turpis tincidunt. Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi tristique. Nec dui nunc mattis enim ut tellus elementum. Habitasse platea dictumst quisque sagittis purus. Aliquam faucibus purus in massa tempor nec feugiat nisl pretium.",
+      "imageUrl": "https://images.unsplash.com/photo-1688202408403-b0053d377d37?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=800&q=60"
     }
   ]
 }
