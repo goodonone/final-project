@@ -24,18 +24,18 @@ export class FoundByNameComponent implements OnInit {
     // this.id = parseInt(routeId);
     this.productService.getProductByName(search).subscribe(foundProduct => {
       this.searchedProduct = foundProduct;
-
-
+      console.log(this.searchedProduct);
     });
+  }
 
-    onDelete(this.id) {
+    onDelete(id: number) {
       this.productService.deleteProductByID(id).subscribe(response => {
         this.productService = response;
         this.router.navigate(['products']);
       });
     }
 
-  }
+  
 }
 
  //   const routeId = this.actRoute.snapshot.paramMap.get("itemName") ?? "";

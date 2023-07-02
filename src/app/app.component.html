@@ -15,7 +15,7 @@
                 </li>
                 <form class="form-inline my-2 my-lg-0" id="form">
                     <input class="form-control mr-sm-2" id="mySearch" name="search" type="input" placeholder="Search" aria-label="Search" (keyup.enter)="searchByName(searchForName)">
-                    <button class="btn btn btn-dark" name="search" id="button" >Search</button>
+                    <button class="btn btn btn-dark" name="search" id="button" (onclick)="searchByName(searchForName)">Search</button>
                   </form>
             </ul>
         </div>

@@ -22,9 +22,6 @@ export class ProductDetailsComponent implements OnInit {
     this.productService.getProductByID(this.id).subscribe(foundProduct => {
       this.currentProduct = foundProduct;
     });
-
-  
-
   }
 
   onDelete(id: number) {

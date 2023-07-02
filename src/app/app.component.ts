@@ -13,38 +13,52 @@ export class AppComponent implements OnInit {
   title = 'final-project';
 
   searchForName: string = "";
-  // input: string = "";
+  input!: String;
+  itemName: String = "";
   // filter!: any;
   // value!: any;
 
   foundProduct: Product = new Product();
 
+  productList: Product[] = [];
 
   constructor(private productService: ProductsService, private actRoute: ActivatedRoute, private router: Router) { }
 
 
   ngOnInit(): void {
-
+    this.productService.getAllProducts().subscribe(foundProducts => {
+      this.productList = foundProducts;
+      console.log(this.productList);
+    });
   }
 
   searchByName(searchForName: string) {
-    var searchForName = (<HTMLInputElement>document.getElementById('mySearch')).value;
-    // this.searchForName = document.getElementById('mySearch')?.value;
+      var searchForName = (<HTMLInputElement>document.getElementById('mySearch')).value;
+      var input = searchForName.charAt(0).toUpperCase()+ searchForName.slice(1);
+      for(var i = 0; i<=this.productList.length; i++ )
+      {
+        if(this.productList[i].itemName.includes(input)){
+          this.router.navigate(['/search', input]);
+        }
+      }
+      this.router.navigate(['**']);
+      }
+    };
+
+    //  console.log(input);
+    // this.router.navigate(['/search', searchForName]);
+
+    // this.productService.getProductByName(input).subscribe(foundProducts => {
+    // this.productList = foundProducts;
+    // if
+    // this.filter = input.valueOf.toUpperCase();
+    // this.router.navigate(['/products/', this.input]);
+ 
+
+ // this.searchForName = document.getElementById('mySearch')?.value;
     // this.productService.getProductByName(searchForName).subscribe(result => {
     //   this.foundProduct = result;
       // console.log(this.foundProduct);
-      this.router.navigate(['/search', searchForName]);
-    }; 
-
-
-    // this.productService.getProductByName(input).subscribe(foundProducts => {
-      // this.productList = foundProducts;
-      // if
-      // this.filter = input.valueOf.toUpperCase();
-      // this.router.navigate(['/products/', this.input]);
-    };
-    
-
 
     // if(input = this.productList.itemName
 
@@ -79,4 +93,4 @@ export class AppComponent implements OnInit {
     // });
 
   // }
-  
+
