@@ -28,25 +28,28 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.productService.getAllProducts().subscribe(foundProducts => {
       this.productList = foundProducts;
-      console.log(this.productList);
+      // console.log(this.productList);
     });
   }
 
   searchByName(searchForName: string) {
-      var searchForName = (<HTMLInputElement>document.getElementById('mySearch')).value;
+      var searchForName = (<HTMLInputElement>document.getElementById('mySearch') ?? "").value;
       var input = searchForName.charAt(0).toUpperCase()+ searchForName.slice(1);
+      // this.router.navigate(['/search', input]);
       for(var i = 0; i<=this.productList.length; i++ )
       {
-        if(this.productList[i].itemName.includes(input)){
-          this.router.navigate(['/search', input]);
+        if(input == this.productList[i].itemName){
+          this.router.navigateByUrl(`/search/${input}`);
         }
       }
       this.router.navigate(['**']);
       }
     };
 
+    
+
     //  console.log(input);
-    // this.router.navigate(['/search', searchForName]);
+    // this.router.navigate(['/search', input);
 
     // this.productService.getProductByName(input).subscribe(foundProducts => {
     // this.productList = foundProducts;
@@ -92,5 +95,5 @@ export class AppComponent implements OnInit {
 
     // });
 
-  // }
+  
 
