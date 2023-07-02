@@ -12,6 +12,8 @@
     </div>
 </div>
 
+<div class="buttonContainer">
 <button [routerLink]='["/edit", currentProduct.id]'>Edit Product</button>
 <button (click)="onDelete(currentProduct.id)">Delete Product</button>
 <button routerLink="/products">Back</button>
+</div>

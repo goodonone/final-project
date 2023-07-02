@@ -1,10 +1,12 @@
 <h1>Edit Product</h1>
 
-<div>
-    <img src={{currentProduct.imageUrl}}/>
-</div>
 
-<form #form="ngForm" (ngSubmit)="onSubmit()">
+
+<!-- <div>
+    <img src={{currentProduct.imageUrl}}/>
+</div> -->
+
+<!-- <form #form="ngForm" (ngSubmit)="onSubmit()">
     <label>Product Name</label>
     <input type="text" name="productName" [(ngModel)]="currentProduct.itemName">
 
@@ -25,5 +27,48 @@
 
     <button type="submit">Submit</button>
     <button routerLink="/products">Back</button>
-</form>
+</form> -->
+
+<div class="container"> 
+  
+
+    <form class="example-form" #form="ngForm" (ngSubmit)="onSubmit()">
+        <mat-form-field class="example-full-width" appearance="outline" [style.width.px]=500>
+            <mat-label>Product Name</mat-label>
+            <input matInput type="text" name="productName" class="input" [(ngModel)]="currentProduct.itemName">
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="outline" [style.width.px]=150>
+            <mat-label>Price</mat-label>
+            <input matInput type="number" name="price" class="input" placeholder="$" [(ngModel)]="currentProduct.price">
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="outline" [style.width.px]=500>
+            <mat-label>Description</mat-label>
+            <textarea matInput type="text" name="description" class="input" [(ngModel)]="currentProduct.description"></textarea>
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="outline" [style.width.px]=500>
+            <mat-label>Is the Product Organic?</mat-label>
+            <mat-select class="input">
+                <mat-option value="true">Yes</mat-option>
+                <mat-option value="false">No</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="outline" [style.width.px]=500> 
+            <mat-label>Product Image URL</mat-label>
+            <input matInput type="text" name="imageLink" class="input" [(ngModel)]="currentProduct.imageUrl">
+        </mat-form-field>
+        <br>
+        <button type="submit">Submit</button>
+        <button routerLink="/products">Back</button>
+    </form>
+
+    <div class="image">
+        <mat-card class="example-card" class="cardImage">
+            <img mat-card-image src={{currentProduct.imageUrl}} alt="Photo of the Bread you chose">
+        </mat-card>
+    </div>
+</div> 
 

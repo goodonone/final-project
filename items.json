@@ -23,13 +23,6 @@
       "description": "Dis parturient montes nascetur ridiculus mus. Mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare. Interdum velit euismod in pellentesque massa placerat duis. Sed velit dignissim sodales ut eu sem integer vitae justo. Adipiscing elit ut aliquam purus sit amet. Cras adipiscing enim eu turpis egestas pretium aenean. Pellentesque habitant morbi tristique senectus. Rhoncus urna neque viverra justo nec ultrices. Quisque id diam vel quam elementum pulvinar. At consectetur lorem donec massa. Ac tortor dignissim convallis aenean et tortor at risus. Tincidunt arcu non sodales neque sodales ut. Nulla pharetra diam sit amet nisl suscipit adipiscing. At erat pellentesque adipiscing commodo elit at. Lectus quam id leo in vitae turpis massa sed. Faucibus nisl tincidunt eget nullam non nisi.",
       "organic": "true",
       "imageUrl": "assets/Brioche.jpg"
-    },
-    {
-      "id": 4,
-      "itemName": "Jam",
-      "price": 5.99,
-      "description": "Duis ultricies lacus sed turpis tincidunt. Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi tristique. Nec dui nunc mattis enim ut tellus elementum. Habitasse platea dictumst quisque sagittis purus. Aliquam faucibus purus in massa tempor nec feugiat nisl pretium.",
-      "imageUrl": "https://images.unsplash.com/photo-1688202408403-b0053d377d37?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=800&q=60"
     }
   ]
 }

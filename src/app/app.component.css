@@ -61,15 +61,17 @@ input {
     font-size: inherit;
 }
 
-#footerContainer {
+/* #footerContainer {
     margin-top: 20px;
-}
+} */
 
 #footer {
     display: flex;
     justify-content: left;
     background-color: rgb(231, 211, 174);
-    padding-top: 10px;
+    padding-top: 12px;
+    font-size: smaller;
+    /* background-opacity: 0.5; */
     /* margin-top: 90px; */
 }
 

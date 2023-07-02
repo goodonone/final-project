@@ -17,8 +17,8 @@ h1 {
 }
 
 .cardImage {
-    width: 250px;
-    height: 350px;
+    width: 260px;
+    height: 360px;
 }
 
 #imagesContainer {
@@ -61,7 +61,8 @@ button:hover {
     display: flex;
     justify-content:center;
     padding-right: 30px;
-    padding-top: 0px;
     flex-wrap: wrap;
-    margin-bottom: 100px;
+    /* margin-bottom: 180px; */
+    margin-top: -45px;
+    /* height:5vh; */
 }
