@@ -15,13 +15,11 @@ export class FoundByNameComponent implements OnInit {
   id: number = 0;
   itemName: string = "";
 
-  searchedProduct: Product = new Product()
+  searchedProduct: Product = new Product();
 
   ngOnInit(): void {
     const search = this.actRoute.snapshot.params['itemName'] ?? "";
     console.log(search);
-    // const routeId = this.actRoute.snapshot.params.get("itemName") ?? "";
-    // this.id = parseInt(routeId);
     this.productService.getProductByName(search).subscribe(foundProduct => {
       this.searchedProduct = foundProduct;
       console.log(this.searchedProduct);
@@ -37,7 +35,3 @@ export class FoundByNameComponent implements OnInit {
 
   
 }
-
- //   const routeId = this.actRoute.snapshot.paramMap.get("itemName") ?? "";
-  //   this.productService.getProductByName(this.itemName).subscribe(foundProduct => {
-  //     this.searchedProduct = foundProduct;

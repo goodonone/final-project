@@ -14,18 +14,10 @@ export class ProductsComponent implements OnInit {
 
   id: number = 0;
 
-  currentProduct: Product = new Product();
-
   constructor(private productService: ProductsService, private actRoute: ActivatedRoute, private router: Router) { }
 
   ngOnInit(): void {
     this.loadProducts();
-
-    // const routeId = this.actRoute.snapshot.paramMap.get("id") ?? "";
-    // this.id = parseInt(routeId);
-    // this.productService.getProductByID(this.id).subscribe(foundProduct => {
-    //   this.currentProduct = foundProduct;
-    // });
   }
 
   loadProducts() {
@@ -38,6 +30,7 @@ export class ProductsComponent implements OnInit {
     this.productService.deleteProductByID(id).subscribe(response => {
       this.productService = response;
       this.router.navigate(['products']);
+      // location.reload();
     });
   }
 
